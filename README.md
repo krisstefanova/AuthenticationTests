@@ -18,4 +18,4 @@ If you would like to download the code and try it for yourself:
 >$ npm test
 
 ## Some API suggestions
-- Add a service that deletes a customer account because with the registration tests, every time a new user that will never be used is added. The service can be used in an after hook. Currently I've work-arounded it using a random timestamp in the registration email which is not very elegant.
+- Add a service that deletes a customer account because with the registration tests, every time a new user that will never be used is added. The service can be used in an "after" hook. Currently, I've work-arounded it using a random timestamp in the registration email which is not very elegant.
