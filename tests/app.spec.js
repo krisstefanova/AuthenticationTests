@@ -82,7 +82,7 @@ describe("Test 'register' endpoint", () => {
 describe("Test 'login' end-point", () => {
   let endpoint = "/login";
 
-  it("It should login a user", (done) => {
+  it("should login a user", (done) => {
     let userData = {
       "login": userDetails.loginEmail,
       "password": userDetails.password
@@ -103,7 +103,7 @@ describe("Test 'login' end-point", () => {
     });
   });
 
-  it("It shouldn't login a user with a wrong password", (done) => {
+  it("shouldn't login a user with a wrong password", (done) => {
     let userData = {
       "login": userDetails.loginEmail,
       "password": userDetails.wrongPassword
@@ -125,7 +125,7 @@ describe("Test 'login' end-point", () => {
 describe("Test 'me' endpoint", () => {
   let endpoint = "/me";
 
-  it("It shouldn't succeed to check for profile page without a cookie", (done) => {
+  it("shouldn't succeed to check for profile page without a cookie", (done) => {
     request.get({
       url: baseURL + endpoint,
       json: {}
@@ -136,7 +136,7 @@ describe("Test 'me' endpoint", () => {
     })
   });
 
-  it("It should open the profile page with a cookie", (done) => {
+  it("should open the profile page with a cookie", (done) => {
     // login first in order to obtain the cookie
     let userData = {
       "login": userDetails.loginEmail,
