@@ -6,7 +6,7 @@ let request = require('request');
 let baseURL = "https://test-api.lescapes.com";
 let expect = chai.expect;
 
-// some initial details that are used in many tests in this describe block
+// some initial details that are used in many tests in all describe blocks
 let userDetails = {
   registerEmail: "test" + Date.now() + "@domain.com",
   givenName: "TestName",
